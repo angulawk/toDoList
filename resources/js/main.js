@@ -4,6 +4,13 @@
 var removeIcon = "<i class=\"fa fa-trash-o\"></i>";
 var completeIcon = "<i class=\"fa fa-check-circle-o\"></i>"
 
+document.getElementById("item").addEventListener("keyup", function(e) {
+	e.preventDefault();
+	if (e.keyCode == 13) {
+		document.getElementById("addItem").click();
+	}
+})
+
 document.getElementById("addItem").addEventListener('click', function(){
 	var value = document.getElementById("item").value;
 
