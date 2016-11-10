@@ -264,7 +264,7 @@ ul#completed {
 	}
 
 	&:not(:empty):before {
-		content: "Done";
+		content: "";
 		width: 150px;
 		height: 1px;
 		background: #d8e5e0;
